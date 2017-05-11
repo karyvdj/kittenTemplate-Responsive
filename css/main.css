@@ -2,60 +2,62 @@
   margin:0;
   padding: 0;
 }
-body{
+
+html, body,.container{
   background-image: url(../img/Landscape.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
+.containerKitten{
+  width: 40%;
+  margin: auto;
+}
 .kitten{
-  position: absolute;
-  width:40%;
+  width:100%;
 }
-.kitten>img{
-  width: 100%;
-  margin-top: 50%;
-}
-.kitten>img:nth-child(2), img:last-child{
+
+.containerKitten>img:nth-child(2), img:last-child{
   display: none;
 }
 
 @media(max-width:1024px){
-  body{
+  .container{
     background-image: url(../img/dawn.png);
   }
 }
 @media(max-width:768px){
-  body{
+  .container{
     background-image: url(../img/dawn.png);
   }
-  .kitten>img:first-child, img:last-child{
+  .containerKitten>img:first-child, img:last-child{
     display: none;
   }
-  .kitten>img:nth-child(2){
+  .containerKitten>img:nth-child(2){
     display: block;
   }
 }
 @media(max-width: 480px){
-  body{
+  .container{
     background-image: url(../img/midnight-conversation_861064.jpg);
   }
-  .kitten>img:nth-child(2){
+  .containerKitten>img:nth-child(2){
     display: none;
   }
-  .kitten>img:last-child{
+  .containerKitten>img:last-child{
     display: block;
   }
 }
 @media(max-width: 320px){
-  body{
+  .container{
     background-image: url(../img/maxresdefault.jpg);
   }
-  .kitten>img:nth-child(2){
+  .containerKitten>img:nth-child(2){
     display: none;
   }
-  .kitten>img:last-child{
+  .containerKitten>img:last-child{
     display: block;
   }
 }
